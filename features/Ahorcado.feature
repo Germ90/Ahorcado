@@ -14,6 +14,16 @@ Given inicio la aplicacion
 When ingresa la letra "x" and clickea "verificar"
 Then se muestra en pantalla la letra "x"
 
+Scenario: Ingresa letra correcta
+Given inicio la aplicacion
+When ingresa la letra "o" and clickea "verificar"
+Then se muestra en pantalla la letra "o"
+
+Scenario: Ingresa letra correcta
+Given inicio la aplicacion
+When ingresa la letra "r" and clickea "verificar"
+Then se muestra en pantalla la letra "r"
+
 Scenario: Ingresa 3 letras incorrectas
 Given inicio la aplicacion
 When ingresa la letra "e" and clickea "verificar"
