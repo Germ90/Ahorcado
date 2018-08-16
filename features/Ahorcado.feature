@@ -14,9 +14,16 @@ Given inicio la aplicacion
 When ingresa la letra "x" and clickea "verificar"
 Then se muestra en pantalla la letra "x"
 
-Scenario: Ingresa letra correcta
+Scenario: Ingresa 3 letras incorrectas
 Given inicio la aplicacion
 When ingresa la letra "e" and clickea "verificar"
 When ingresa la letra "t" and clickea "verificar"
 When ingresa la letra "a" and clickea "verificar"
 Then veo la palabra en pantalla "GAME OVER"
+
+Scenario: Ingresa 3 letras correctas
+Given inicio la aplicacion
+When ingresa la letra "x" and clickea "verificar"
+When ingresa la letra "o" and clickea "verificar"
+When ingresa la letra "r" and clickea "verificar"
+Then veo la palabra en pantalla "WIN"

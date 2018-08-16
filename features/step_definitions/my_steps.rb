@@ -12,6 +12,7 @@ end
 When(/^ingresa la letra "(.*?)" and clickea "(.*?)"$/) do |letra, verif|
   fill_in("intento", :with => letra)
   click_button(verif)
+	#puts last_response.body
 end
 
 Then(/^los intentos quedan en "(.*?)"$/) do |intento|
